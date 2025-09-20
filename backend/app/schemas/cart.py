@@ -1,0 +1,18 @@
+from pydantic import BaseModel
+
+class CartItemIn(BaseModel):
+    product_id: int
+    quantity: int = 1
+
+class CartItemOut(BaseModel):
+    id: int
+    product_id: int
+    quantity: int
+    class Config:
+        orm_mode = True
+
+class CartOut(BaseModel):
+    id: int
+    items: list[CartItemOut]
+    class Config:
+        orm_mode = True
