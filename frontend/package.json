@@ -8,9 +8,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "jsqr": "^1.4.0",
+    "next": "15.5.2",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "next": "15.5.2"
+    "react-qr-barcode-scanner": "^2.1.10"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
